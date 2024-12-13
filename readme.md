@@ -1,53 +1,34 @@
-Este es un proyecto base para que poder reutilizarlo.
-para probarlo:
-npm i
-y en postman probar esta url en get:
-http://localhost:3005/v1/api/example/hello
+README - Sports Betting Application
 
-```
-backend
-├─ .env
-├─ .gitignore
-├─ config
-│  ├─ container.js
-│  └─ index.js
-├─ controllers
-│  ├─ base.controller.js
-│  ├─ example.controller.js
-│  └─ index.js
-├─ index.js
-├─ middleware
-│  ├─ authMiddleware.js
-│  ├─ errorMiddleware.js
-│  └─ index.js
-├─ models
-│  ├─ example.models.js
-│  └─ index.js
-├─ package-lock.json
-├─ package.json
-├─ readme.md
-├─ routes
-│  ├─ api
-│  │  ├─ index.js
-│  │  └─ v1.example.js
-│  └─ index.js
-├─ services
-│  ├─ base.service.js
-│  ├─ example.service.js
-│  └─ index.js
-├─ startup
-│  ├─ database.js
-│  ├─ index.js
-│  └─ server.js
-└─ utils
-   ├─ app-error.js
-   ├─ auth.js
-   ├─ catch-controller-async.js
-   ├─ catch-service-async.js
-   ├─ constants.js
-   ├─ handleHttpResponse.js
-   ├─ handlePagination.js
-   ├─ handlePatterns.js
-   └─ handleValidator.js
+Backend
 
-```
+Requisitos previos
+
+Node.js (versión 14 o superior)
+
+MongoDB (instalado y en ejecución)
+
+Instalación
+
+Clonar el repositorio:
+
+git clone <URL_REPOSITORIO>
+cd backend
+
+Instalar dependencias:
+
+npm install
+
+Configurar variables de entorno:
+Crear un archivo .env en el directorio raíz del backend y definir las siguientes variables:
+
+PORT=3005
+MONGO_URI=mongodb://localhost:27017/sports-betting
+JWT_SECRET=mi_secreto_super_seguro
+
+Iniciar el servidor:
+
+npm run dev
+
+Probar la API:
+Accede a http://localhost:3005/v1/api para comprobar que el backend está funcionando correctamente
